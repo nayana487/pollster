@@ -31,8 +31,8 @@ app.get('/precinctdata/:mongoid', function(req, res) {
   });
 });
 
-app.set('port', (process.env.PORT || 4000));
+app.set('port', (process.env.PORT || 8000));
 
-app.listen(4000, function(){
+app.listen(app.get('port'), function(){
   console.log("app listening on port 4000")
 });
