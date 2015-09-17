@@ -21,22 +21,22 @@ function drawMarkers(year){
 
   for (i=0; i<allDataList.length; i++) {
     var markerSize = 'small';
-    var markerColor = '#7DF9FF'
+    var markerColor = '#000000'
 
-    if((allDataList[i].voters >= 500)&&(allDataList[i].voters <1000)) {
+    if((allDataList[i].voters >= 100)&&(allDataList[i].voters <300)) {
       markerSize = 'medium';
     }
-    else if (allDataList[i].voters <= 1000){
+    else if (allDataList[i].voters <= 300){
       markerSize = 'large';
     }
 
     var turnout=allDataList[i].votes/allDataList[i].voters*100;
 
     if((turnout>= 25)&&(turnout <40)) {
-      markerColor = '#FF69B4';
+      markerColor = '#EB3D3B';
     }
     else if (turnout >= 40){
-      markerColor = '#39FF14';
+      markerColor = '#FDD34B';
     }
 
     var precinctMarker = L.mapbox.featureLayer({

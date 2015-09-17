@@ -1,6 +1,28 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'helvetica';
+  color: #335;
+}
+
+.header {
+  color: #eee;
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  background-color: #335;
+  margin-bottom: 20px;
+}
+
 #map {
-  height: 600px;
-  width: 800px; top:0; bottom:0;}
+  margin: 0 auto;
+  height: 550px;
+  width: 75%; top:0; bottom:0;
+  margin-bottom:40px; }
 
 
   .menu-ui {
@@ -13,6 +35,12 @@
     border:1px solid rgba(0,0,0,0.4);
     }
 
+    #firstLink {
+
+    }
+  .menu-ui {
+      margin-top: 140px;
+  }
   .menu-ui a {
      font-size:13px;
      color:#404040;
@@ -35,9 +63,9 @@
        color:#404040;
        }
      .menu-ui a.active {
-       background:#3887BE;
+       background:#335;
        color:#FFF;
        }
        .menu-ui a.active:hover {
-         background:#3074a4;
+         background:red;
          }
