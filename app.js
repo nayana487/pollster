@@ -5,7 +5,7 @@ var path = require('path');
 var collections = ["precincts"]
 var mongojs = require("mongojs")
 //db name must be test  and collection name must be precincts in mongo
-var db = (mongojs(process.env.MONGOLAB_URI, ['precincts']));
+var db = mongojs("test", ['precincts']);
 var mongo = require("mongodb");
 
 
