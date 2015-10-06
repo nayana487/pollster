@@ -1,7 +1,6 @@
 {
   "name": "precinct_polling",
   "version": "1.0.0",
-  "description": "",
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,5 +11,15 @@
     "express": "^4.13.3",
     "mongodb": "^2.0.43",
     "mongojs": "^1.3.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nayana487/pollster.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nayana487/pollster/issues"
+  },
+  "homepage": "https://github.com/nayana487/pollster#readme",
+  "description": ""
 }

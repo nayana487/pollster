@@ -5,7 +5,8 @@ var path = require('path');
 var collections = ["precincts"]
 var mongojs = require("mongojs")
 //db name must be test  and collection name must be precincts in mongo
-var db = mongojs("test", ['precincts']);
+//var db = mongojs("test", ['precincts']);
+var db = mongojs('test', ['precincts'], {authMechanism: 'ScramSHA1'});
 var mongo = require("mongodb");
 
 
